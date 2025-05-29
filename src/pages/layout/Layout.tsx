@@ -6,15 +6,17 @@ import Footer from '../../components/footer/Footer'
 const Layout = () => {
   return (
     <>
-    <header>
-      <Header/>
-    </header>
-    <main>
-      <Outlet/>
-    </main>
-    <footer>
-      <Footer/>
-    </footer>
+      <header className="fixed top-0 left-0 w-full z-50 shadow-md bg-white">
+        <Header />
+      </header>
+
+      <main className="pt-20 pb-20 min-h-screen bg-gray-50">
+        <Outlet />
+      </main>
+
+      <footer className="fixed bottom-0 left-0 w-full z-50 shadow-inner bg-white">
+        <Footer />
+      </footer>
     </>
   )
 }
